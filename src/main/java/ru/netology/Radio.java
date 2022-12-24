@@ -4,12 +4,17 @@ public class Radio {
 
 
     private int currentStation;
+    private int currentVolume;
 
     private int counterStation;
 
     private int minStation = 0;
 
-    private int maxStation = 20;
+    private int maxStation = 10;
+
+    private int minVolume = 0;
+
+    private int maxVolume = 100;
 
 
 
@@ -50,6 +55,27 @@ public class Radio {
             currentStation = maxStation;
         } else {
             currentStation = maxStation;
+        }
+    }
+    public int getCurrentVolume() {
+        return currentVolume;
+    }
+    public void setCurrentVolume(int newVolume) {
+        currentVolume = newVolume;
+    }
+
+    public void increaseVolume() {
+        if (currentVolume < maxVolume) {
+            currentVolume = currentVolume + 1;
+        } else {
+            currentVolume = maxVolume;
+        }
+    }
+    public void decreaseVolume() {
+        if (currentVolume > minVolume) {
+            currentVolume = currentVolume - 1;
+        } else {
+            currentVolume = minVolume;
         }
     }
 
