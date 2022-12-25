@@ -11,6 +11,7 @@ public class RadioTest {
 
     Radio station = new Radio(10);
 
+
     @Test
     public void stationEntered() {
         int maxStation = 9;
@@ -18,6 +19,9 @@ public class RadioTest {
         int expected = maxStation;
         assertEquals(expected, actual);
     }
+
+
+
 
     @ParameterizedTest
     @CsvFileSource(files = "src/test/java/resources/stationNext.csv")
