@@ -3,19 +3,6 @@ package ru.netology;
 
 public class Radio {
 
-    //конструктор без параметров :
-    public Radio() {
-    }
-
-
-    // конструктор с 1 параметром : кол-во станций у радио
-    public Radio(int currentStation, int currentVolume, int counterStation, int minStation, int maxStation) {
-        this.currentStation = currentStation;
-        this.counterStation = counterStation;
-        this.minStation = minStation;
-        this.maxStation = maxStation;
-
-    }
 
     private int currentStation;
 
@@ -25,6 +12,16 @@ public class Radio {
 
     private int maxStation = 10;
 
+    //конструктор без параметров :
+    public Radio() {
+    }
+
+
+    // конструктор с параметром : кол-во станций у радио
+    public Radio( int counterStation, int maxStation) {
+
+        this.maxStation = maxStation;
+    }
 
 
     public Radio(int countStation) {
