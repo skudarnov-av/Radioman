@@ -7,7 +7,7 @@ public class Radio {
     }
 
 
-   // конструктор с 1 параметром : кол-во станций у радио
+    // конструктор с 1 параметром : кол-во станций у радио
     public Radio(int currentStation, int currentVolume, int counterStation, int minStation, int maxStation, int minVolume, int maxVolume) {
         this.currentStation = currentStation;
         this.currentVolume = currentVolume;
@@ -25,9 +25,6 @@ public class Radio {
     private int minStation = 0;
 
     private int maxStation = 10;
-
-
-
 
 
     public Radio(int countStation) {
