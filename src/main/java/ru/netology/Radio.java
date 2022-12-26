@@ -16,17 +16,10 @@ public class Radio {
     public Radio() {
     }
 
-
-    // конструктор с параметром : кол-во станций у радио
-    public Radio( int counterStation, int maxStation) {
-
-        this.maxStation = maxStation;
-    }
-
-
+    // конструктор с параметром 1 : кол-во станций у радио
     public Radio(int countStation) {
         this.counterStation = countStation;
-        this.maxStation = countStation - 1;
+        this.maxStation = maxStation - 1;
     }
 
     public int getCurrentStation() {
